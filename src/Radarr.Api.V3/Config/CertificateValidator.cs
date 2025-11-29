@@ -35,7 +35,9 @@ namespace Radarr.Api.V3.Config
 
             try
             {
+                #pragma warning disable SYSLIB0057
                 new X509Certificate2(resource.SslCertPath, resource.SslCertPassword, X509KeyStorageFlags.DefaultKeySet);
+                #pragma warning restore SYSLIB0057
 
                 return true;
             }

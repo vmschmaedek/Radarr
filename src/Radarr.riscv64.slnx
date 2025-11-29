@@ -1,0 +1,47 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Posix" />
+  </Configurations>
+  <Folder Name="/Host/">
+    <Project Path="NzbDrone.Console/Radarr.Console.csproj" />
+    <Project Path="NzbDrone.Host/Radarr.Host.csproj" />
+    <Project Path="NzbDrone/Radarr.csproj">
+      <Build Solution="*|Posix" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/Platform/">
+    <Project Path="NzbDrone.Mono/Radarr.Mono.csproj" />
+    <!-- <Project Path="NzbDrone.Windows/Radarr.Windows.csproj" /> -->
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../.editorconfig" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="NzbDrone.Api.Test/Radarr.Api.Test.csproj" />
+    <Project Path="NzbDrone.Automation.Test/Radarr.Automation.Test.csproj" />
+    <Project Path="NzbDrone.Common.Test/Radarr.Common.Test.csproj" />
+    <Project Path="NzbDrone.Core.Test/Radarr.Core.Test.csproj" />
+    <Project Path="NzbDrone.Host.Test/Radarr.Host.Test.csproj" />
+    <Project Path="NzbDrone.Integration.Test/Radarr.Integration.Test.csproj" />
+    <Project Path="NzbDrone.Libraries.Test/Radarr.Libraries.Test.csproj" />
+    <Project Path="NzbDrone.Update.Test/Radarr.Update.Test.csproj" />
+  </Folder>
+  <Folder Name="/Tests/Platform/">
+    <Project Path="NzbDrone.Mono.Test/Radarr.Mono.Test.csproj" />
+    <!-- <Project Path="NzbDrone.Windows.Test/Radarr.Windows.Test.csproj" /> -->
+  </Folder>
+  <Folder Name="/Tests/Test.Common/">
+    <Project Path="NzbDrone.Test.Common/Radarr.Test.Common.csproj" />
+    <Project Path="NzbDrone.Test.Dummy/Radarr.Test.Dummy.csproj" />
+  </Folder>
+<!--  <Folder Name="/WindowsServiceHelpers/">
+    <Project Path="ServiceHelpers/ServiceInstall/ServiceInstall.csproj" />
+    <Project Path="ServiceHelpers/ServiceUninstall/ServiceUninstall.csproj" />
+  </Folder> -->
+  <Project Path="NzbDrone.Common/Radarr.Common.csproj" />
+  <Project Path="NzbDrone.Core/Radarr.Core.csproj" />
+  <Project Path="NzbDrone.SignalR/Radarr.SignalR.csproj" />
+  <Project Path="NzbDrone.Update/Radarr.Update.csproj" />
+  <Project Path="Radarr.Api.V3/Radarr.Api.V3.csproj" />
+  <Project Path="Radarr.Http/Radarr.Http.csproj" />
+</Solution>

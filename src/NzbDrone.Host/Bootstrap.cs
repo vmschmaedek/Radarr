@@ -278,7 +278,9 @@ namespace NzbDrone.Host
 
             try
             {
+                #pragma warning disable SYSLIB0057
                 certificate = new X509Certificate2(cert, password, X509KeyStorageFlags.DefaultKeySet);
+                #pragma warning restore SYSLIB0057
             }
             catch (CryptographicException ex)
             {
